@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Grocery Store</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_title">Fresh Market</string>
+    <string name="splash_subtitle">Your grocery needs delivered</string>
+    
+    <!-- Introduction Screen -->
+    <string name="intro_title">Welcome to Fresh Market</string>
+    <string name="intro_description">Discover fresh groceries, organic products, and daily essentials delivered right to your doorstep. Shop from thousands of products with the best quality and competitive prices.</string>
+    <string name="connect_button">Connect</string>
+    <string name="connecting">Connecting...</string>
+    
+    <!-- Error Messages -->
+    <string name="connection_failed">Connection failed. Please check your internet connection and try again.</string>
+    <string name="api_error">Unable to connect to server. Please try again later.</string>
+    
+    <!-- Login Screen -->
+    <string name="login_title">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="signup_text">Don\'t have an account? Sign up</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Background Circle -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M60,60m-55,0a55,55 0,1 1,110 0a55,55 0,1 1,-110 0" />
+    
+    <!-- Shopping Cart Body -->
+    <path
+        android:fillColor="@color/primary_green"
+        android:pathData="M25,35 L95,35 Q97,35 97,37 L95,55 Q95,57 93,57 L35,57 Q33,57 33,55 L31,37 Q31,35 33,35 Z" />
+    
+    <!-- Cart Handle -->
+    <path
+        android:strokeColor="@color/primary_green"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M25,35 L20,25 L15,25" />
+    
+    <!-- Cart Wheels -->
+    <path
+        android:fillColor="@color/primary_green_dark"
+        android:pathData="M40,70m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="@color/primary_green_dark"
+        android:pathData="M80,70m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    
+    <!-- Fruits/Vegetables in cart -->
+    <!-- Apple -->
+    <path
+        android:fillColor="@color/orange_accent"
+        android:pathData="M45,45m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+    <!-- Leaf -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M45,39 Q47,37 49,39 Q47,41 45,39" />
+    
+    <!-- Orange -->
+    <path
+        android:fillColor="#FF5722"
+        android:pathData="M60,42m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    
+    <!-- Lettuce -->
+    <path
+        android:fillColor="#8BC34A"
+        android:pathData="M75,47m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+    
+</vector>

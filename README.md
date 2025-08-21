@@ -113,7 +113,7 @@ For larger videos (25MB+):
     <td align="center"><b>Offers</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/products.png" width="200"/></td>
+    <td><img src="screenshots/product.png" width="200"/></td>
     <td><img src="screenshots/admin.png" width="200"/></td>
     <td><img src="screenshots/offers.png" width="200"/></td>
   </tr>

@@ -1,61 +1,80 @@
 # 🛒 Grocery Store Android App
 
-A modern Android grocery delivery application built with Java and Material Design.
+A modern Android application for grocery store management, supporting both regular users and admin functionality, with modern UI and advanced features.
 
-## 📱 Phase 1 Features (Current)
+---
 
-✅ **Animated Splash Screen**
+## 🚀 **App Features**
 
-- Beautiful grocery cart logo with fruits/vegetables
-- Smooth fade-in, slide-up, and scale animations
-- 3-second display with automatic navigation
+### 👤 **For Regular Users**
 
-✅ **Introduction Screen**
+- **Login and Registration system**
+- **Browse products by category (Vegetables, Fruits, Dairy, Bakery)**
+- **Add products to favorites**
+- **Order products and special offers**
+- **View special offers section**
+- **View product details with image, price, and stock**
+- **Modern and intuitive user interface**
 
-- Welcome message and app description
-- Custom grocery illustration
-- "Connect" button with API simulation
-- Loading indicator and error handling
+### 🛠️ **For Admin**
 
-✅ **Login Flow**
+- **Admin-specific login system**
+- **Add/Edit/Delete products**
+- **Create special offers with product dropdown selection**
+- **Manage special offers (enable/disable/edit)**
+- **View and manage orders**
 
-- Material Design text inputs
-- Email and password validation
-- Navigation to main app
+### 🌐 **REST API Integration**
 
-✅ **UI/UX Design**
+- **Connect Button in Introduction Screen:**
+  - Fetches product data from REST API: [mocki.io/v1/cede0a18-239c-4370-a84f-93fd197c5111](https://mocki.io/v1/cede0a18-239c-4370-a84f-93fd197c5111)
+  - On Success: Navigates to Login screen
+  - On Failure: Shows error toast message
 
-- Custom green color scheme for grocery theme
-- Material Design 3 components
-- Responsive layouts with ConstraintLayout
-- Custom drawable resources and animations
+### 🎨 **Design & User Interface**
 
-## 🚀 App Flow
+- Animated splash screen
+- Introduction screen with connect button
+- Consistent color scheme (Green/Orange)
+- Dark mode support
+- Real product images
+- Clear error messages and toast notifications
 
-1. **Splash Screen** (3 seconds) → Animated logo
-2. **Introduction Screen** → Tap "Connect" button
-3. **Simulated API Call** → Loading animation (2 seconds)
-4. **Login Screen** → Enter credentials
-5. **Main Screen** → Phase 1 completion message
+---
 
-## 🛠️ Technical Stack
+## 🗂️ **App Flow**
 
-- **Language**: Java
-- **UI Framework**: Android Views with Material Design 3
-- **Layout**: ConstraintLayout
-- **Build System**: Gradle with Kotlin DSL
-- **Min SDK**: API 26 (Android 8.0)
-- **Target SDK**: API 36
+1. **SplashActivity** → Animated splash screen
+2. **IntroductionActivity** → Introduction screen with Connect button
+3. **LoginActivity / RegistrationActivity** → Login or create account
+4. **MainActivity**
+   - For Users: Browse products, offers, favorites
+   - For Admin: Manage products and offers
 
-## 📦 Dependencies
+---
 
-- Material Design Components
-- ConstraintLayout
-- Retrofit 2 (prepared for Phase 2)
-- Gson (prepared for Phase 2)
-- Lottie (for future animations)
+## 🗄️ **Database Structure**
 
-## 🔧 Setup & Installation
+- **Local SQLite Database**
+- Tables: Users, Products, Offers, Orders, Favorites
+- Duplicate prevention in favorites
+- Offers linked to products via product_id
+
+---
+
+## 🛠️ **Tech Stack**
+
+- **Programming Language:** Java
+- **UI Framework:** Android Views + Material Design 3
+- **Networking:** Retrofit + Gson
+- **Database:** SQLite
+- **Build System:** Gradle (Kotlin DSL)
+- **Min SDK:** API 26 (Android 8.0)
+- **Target SDK:** API 36
+
+---
+
+## 📦 **Installation & Setup**
 
 ### Prerequisites
 
@@ -66,66 +85,111 @@ A modern Android grocery delivery application built with Java and Material Desig
 ### Steps
 
 1. Clone the repository:
-
    ```bash
-   git clone https://github.com/your-username/grocery-store-android.git
+   git clone https://github.com/HasanQarmash/GroceryStore.git
    ```
+2. Open project in Android Studio
+3. Wait for Gradle sync to complete
+4. Run the app on emulator or physical device
 
-2. Open the project in Android Studio
-
-3. Let Gradle sync complete
-
-4. Run the app:
-   - Click the green "Run" button ▶️
-   - Or press `Shift + F10`
-
-### Running on Device/Emulator
+### Running the App
 
 - **Emulator**: Create AVD with API 34+ (recommended)
 - **Physical Device**: Enable USB debugging in Developer Options
 
-## 📸 Screenshots
+---
 
-_Screenshots will be added once the app is running_
+## � **Key Components**
 
-## 🗺️ Roadmap
+### Activities
 
-### Phase 2 (Planned)
+- `SplashActivity` - Animated splash screen with logo
+- `IntroductionActivity` - Welcome screen with REST API integration
+- `LoginActivity` - User authentication
+- `RegistrationActivity` - New user registration
+- `MainActivity` - Main navigation with drawer
 
-- [ ] Real REST API integration
-- [ ] Product catalog with categories
-- [ ] Search functionality
-- [ ] User authentication
+### Fragments
 
-### Phase 3 (Planned)
+- `ProductsFragment` - Product catalog for users
+- `OffersFragment` - Special offers display
+- `FavoritesFragment` - User's favorite products
+- `ManageProductsFragment` - Admin product management
+- `ManageSpecialOffersFragment` - Admin offers management
 
-- [ ] Shopping cart functionality
-- [ ] Order management
-- [ ] Payment integration
-- [ ] User profile management
+### Key Features
 
-## 🤝 Contributing
+- **Enhanced Favorites System** - Duplicate checking and image loading
+- **Admin Product Dropdown** - Easy offer creation with product selection
+- **REST API Integration** - Real-time data fetching
+- **Custom Logo Integration** - Your logo throughout the app
+- **Database Migration** - Automatic schema updates
+
+---
+
+## 🔧 **Project Structure**
+
+```
+app/
+├── src/main/
+│   ├── java/com/example/grocerystore/
+│   │   ├── activities/          # Main activities
+│   │   ├── fragments/           # UI fragments
+│   │   ├── adapters/           # RecyclerView adapters
+│   │   ├── models/             # Data models
+│   │   ├── database/           # SQLite database helper
+│   │   ├── api/                # REST API services
+│   │   └── utils/              # Utility classes
+│   ├── res/
+│   │   ├── layout/             # XML layouts
+│   │   ├── drawable/           # Images and icons
+│   │   ├── values/             # Colors, strings, dimensions
+│   │   └── anim/               # Animations
+│   └── AndroidManifest.xml
+```
+
+---
+
+## 🚀 **Future Enhancements**
+
+- Shopping cart functionality
+- Payment gateway integration
+- Push notifications
+- Order tracking
+- User profile management
+- Multi-language support
+
+---
+
+## 📋 **Important Notes**
+
+- All images stored in drawable folder
+- .gitignore configured for Android projects
+- App designed for future scalability
+- Comprehensive error handling and logging
+
+---
+
+## 👨‍💻 **Developer**
+
+- **HasanQarmash** - Full Stack Android Developer
+
+---
+
+## 🤝 **Contributing**
 
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
+2. Create feature branch: `git checkout -b feature/new-feature`
 3. Commit changes: `git commit -am 'Add new feature'`
 4. Push to branch: `git push origin feature/new-feature`
 5. Submit a Pull Request
 
-## 📄 License
+---
+
+## 📄 **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-
-**Qarma** - _Initial work_
-
-## 🙏 Acknowledgments
-
-- Material Design guidelines
-- Android development best practices
-- Modern UI/UX patterns for e-commerce apps
-
 ---
 
-⭐ **Star this repository if you found it helpful!**
+⭐ **If you like this project, please give it a star!**

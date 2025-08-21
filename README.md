@@ -4,6 +4,9 @@ A modern Android application for grocery store management, supporting both regul
 
 ---
 
+
+
+
 ## 🚀 **App Features**
 
 ### 👤 **For Regular Users**
@@ -47,8 +50,9 @@ A modern Android application for grocery store management, supporting both regul
 ### 📱 **App Demonstration**
 Watch the complete app walkthrough showing all features:
 
-**🎬 Video Demo:** [Download and Watch Demo Video](https://github.com/HasanQarmash/GroceryStore/releases/download/v1.0/demo.mp4)
-
+[**🎬 Video Demo:** [Download and Watch Demo Video](https://github.com/HasanQarmash/GroceryStore/releases/download/v1.0/demo.mp4)
+](https://github.com/user-attachments/assets/511f9652-0562-4486-b411-7c60558af4ec
+)
 > **Note:** Video is hosted in GitHub Releases due to file size (32MB). Click link to download and watch.
 
 **🎬 Demo Includes:**

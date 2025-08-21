@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/light_gray">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Order ID -->
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order #12345"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_green"
+            android:background="@drawable/category_background"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Status Badge -->
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/status_pending_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/order_id"
+            app:layout_constraintTop_toTopOf="@id/order_id"
+            app:layout_constraintBottom_toBottomOf="@id/order_id" />
+
+        <!-- Date & Time -->
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jan 15, 2025 at 10:30 AM"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:drawableStart="@drawable/ic_access_time_24"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            app:drawableTint="@color/text_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/order_id"
+            app:layout_constraintBottom_toBottomOf="@id/order_id" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Fresh Organic Bananas"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/total_price"
+            app:layout_constraintTop_toBottomOf="@id/order_id" />
+
+        <!-- Quantity -->
+        <TextView
+            android:id="@+id/quantity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Quantity:"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/product_name" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="2 items"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            app:layout_constraintStart_toEndOf="@id/quantity_label"
+            app:layout_constraintTop_toTopOf="@id/quantity_label"
+            app:layout_constraintBottom_toBottomOf="@id/quantity_label" />
+
+        <!-- Unit Price -->
+        <TextView
+            android:id="@+id/unit_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Unit Price:"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintStart_toEndOf="@id/quantity"
+            app:layout_constraintTop_toTopOf="@id/quantity_label"
+            app:layout_constraintBottom_toBottomOf="@id/quantity_label" />
+
+        <TextView
+            android:id="@+id/unit_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="$2.50"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_green"
+            app:layout_constraintStart_toEndOf="@id/unit_price_label"
+            app:layout_constraintTop_toTopOf="@id/quantity_label"
+            app:layout_constraintBottom_toBottomOf="@id/quantity_label" />
+
+        <!-- Total Price -->
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$5.00"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/product_name"
+            app:layout_constraintBottom_toBottomOf="@id/product_name" />
+
+        <!-- Delivery Method -->
+        <TextView
+            android:id="@+id/delivery_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Home Delivery"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text"
+            android:drawableStart="@drawable/ic_local_shipping_24"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/delivery_method_background"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            app:drawableTint="@color/primary_green"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantity_label" />
+
+        <!-- Delivery Address (only for home delivery) -->
+        <TextView
+            android:id="@+id/delivery_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="123 Main Street, City, Country"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:drawableStart="@drawable/ic_location_on_24"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone"
+            app:drawableTint="@color/text_secondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/sync_status"
+            app:layout_constraintTop_toBottomOf="@id/delivery_method" />
+
+        <!-- Sync Status -->
+        <ImageView
+            android:id="@+id/sync_status"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_sync_24"
+            android:contentDescription="Sync status"
+            app:tint="@color/primary_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/delivery_method"
+            app:layout_constraintBottom_toBottomOf="@id/delivery_method" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:id="@+id/action_buttons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/delivery_address">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel_order"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cancel"
+                android:textSize="12sp"
+                android:textColor="@color/error_color"
+                app:strokeColor="@color/error_color"
+                app:cornerRadius="18dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_reorder"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Reorder"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primary_green"
+                app:cornerRadius="18dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

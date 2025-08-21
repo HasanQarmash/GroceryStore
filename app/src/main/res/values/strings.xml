@@ -17,8 +17,148 @@
     
     <!-- Login Screen -->
     <string name="login_title">Login</string>
-    <string name="email_hint">Email</string>
-    <string name="password_hint">Password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
     <string name="login_button">Login</string>
     <string name="signup_text">Don\'t have an account? Sign up</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    
+    <!-- Registration Screen -->
+    <string name="create_account">Create Account</string>
+    <string name="join_grocery_store">Join our grocery store family</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="gender">Gender</string>
+    <string name="city">City</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    
+    <!-- Gender Options -->
+    <string name="select_gender">Select Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    
+    <!-- Cities -->
+    <string name="select_city">Select City</string>
+    <string name="ramallah">Ramallah</string>
+    <string name="jerusalem">Jerusalem</string>
+    <string name="nablus">Nablus</string>
+    <string name="gaza">Gaza</string>
+    
+    <!-- Validation Messages -->
+    <string name="email_required">Email is required</string>
+    <string name="email_invalid">Please enter a valid email address</string>
+    <string name="password_required">Password is required</string>
+    <string name="password_weak">Password must be at least 5 characters with 1 letter, 1 number, and 1 special character</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="first_name_required">First name is required (minimum 3 characters)</string>
+    <string name="last_name_required">Last name is required (minimum 3 characters)</string>
+    <string name="gender_required">Please select gender</string>
+    <string name="city_required">Please select city</string>
+    <string name="phone_required">Phone number is required</string>
+    <string name="phone_invalid">Please enter a valid phone number</string>
+    
+    <!-- Success Messages -->
+    <string name="registration_success">Registration successful! Please login.</string>
+    <string name="login_success">Login successful!</string>
+    <string name="login_failed">Invalid email or password</string>
+    
+    <!-- Country Codes -->
+    <string name="palestine_code">+970</string>
+    
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_products">Products</string>
+    <string name="nav_my_orders">My Orders</string>
+    <string name="nav_my_favorites">My Favorites</string>
+    <string name="nav_offers">Special Offers</string>
+    <string name="nav_profile">Profile Management</string>
+    <string name="nav_contact_us">Contact Us</string>
+    <string name="nav_logout">Logout</string>
+    <string name="nav_help">Help &amp; Support</string>
+    
+    <!-- Home Fragment -->
+    <string name="welcome_to_fresh_market">Welcome to Fresh Market</string>
+    <string name="fresh_market_description">Your trusted partner for fresh groceries, organic products, and daily essentials delivered right to your doorstep.</string>
+    <string name="about_us_title">About Us</string>
+    <string name="about_us_content">Fresh Market has been serving the Palestinian community for over 10 years, providing high-quality groceries at competitive prices. We are committed to bringing you the freshest produce and finest products from local and international suppliers.</string>
+    <string name="our_mission_title">Our Mission</string>
+    <string name="our_mission_content">To make grocery shopping convenient, affordable, and accessible to every family in Palestine by providing exceptional service and quality products.</string>
+    <string name="why_choose_us_title">Why Choose Us?</string>
+    <string name="why_choose_us_content">• Fresh products sourced directly from farms\n• Competitive prices and regular discounts\n• Fast and reliable delivery service\n• Excellent customer support\n• Wide variety of local and international brands</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="view_offers">View Offers</string>
+    <string name="my_orders">My Orders</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="grocery_store_logo">Fresh Market Logo</string>
+    
+    <!-- Orders Fragment -->
+    <string name="my_orders_title">My Orders</string>
+    <string name="orders_subtitle">Track and manage your orders</string>
+    <string name="no_orders_yet">No Orders Yet</string>
+    <string name="start_shopping_message">Start your shopping journey with us! Browse our wide selection of fresh products and place your first order.</string>
+    <string name="start_shopping">Start Shopping</string>
+    <string name="no_orders_icon">No orders illustration</string>
+    
+    <!-- Favorites Fragment -->
+    <string name="my_favorites_title">My Favorites</string>
+    <string name="favorites_subtitle">Your saved favorite products</string>
+    <string name="no_favorites_yet">No Favorites Yet</string>
+    <string name="add_favorites_message">Browse products and add them to your favorites for quick access and future purchases.</string>
+    <string name="browse_products">Browse Products</string>
+    <string name="no_favorites_icon">No favorites illustration</string>
+    
+    <!-- Offers Fragment -->
+    <string name="special_offers">Special Offers</string>
+    <string name="offers_subtitle">Save more with our exclusive deals</string>
+    <string name="offer_1_title">Fresh Vegetables Week</string>
+    <string name="offer_1_description">Get the freshest vegetables directly from local farms. Perfect for healthy meals and family nutrition.</string>
+    <string name="offer_1_discount">20% OFF</string>
+    <string name="offer_2_title">Family Essentials Bundle</string>
+    <string name="offer_2_description">Complete bundle of daily essentials including dairy, bread, eggs, and household items for the whole family.</string>
+    <string name="offer_2_discount">15% OFF</string>
+    <string name="offer_3_title">Weekend Grocery Deal</string>
+    <string name="offer_3_description">Special weekend pricing on selected items. Stock up for the week with amazing discounts.</string>
+    <string name="offer_3_discount">25% OFF</string>
+    
+    <!-- Profile Fragment -->
+    <string name="profile_management">Profile Management</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="account_actions">Account Actions</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="profile_image">Profile Image</string>
+    
+    <!-- Contact Us Fragment -->
+    <string name="contact_us_title">Contact Us</string>
+    <string name="contact_us_subtitle">We\'re here to help you</string>
+    <string name="get_in_touch">Get in Touch</string>
+    <string name="call">Call Us</string>
+    <string name="email_us">Email Us</string>
+    <string name="view_map">Locate Us</string>
+    <string name="location">Location</string>
+    <string name="store_address">Fresh Market Store\nRamallah City Center\nPalestine</string>
+    <string name="business_hours">Business Hours</string>
+    <string name="hours_weekdays">Monday - Friday: 8:00 AM - 10:00 PM</string>
+    <string name="hours_weekend">Saturday - Sunday: 9:00 AM - 9:00 PM</string>
+    <string name="customer_service_note">Customer service is available during business hours</string>
+    <string name="contact_us_icon">Contact us icon</string>
+    <string name="phone_icon">Phone icon</string>
+    <string name="email_icon">Email icon</string>
+    <string name="location_icon">Location icon</string>
+    
+    <!-- Admin Navigation -->
+    <string name="nav_admin_dashboard">Dashboard</string>
+    <string name="nav_manage_users">Manage Users</string>
+    <string name="nav_manage_products">Manage Products</string>
+    <string name="nav_manage_orders">Manage Orders</string>
+    <string name="nav_add_admin">Add New Admin</string>
+    <string name="nav_admin_tools">Admin Tools</string>
 </resources>

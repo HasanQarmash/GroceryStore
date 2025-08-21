@@ -13,7 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="48dp"
-        android:src="@drawable/grocery_logo"
+        android:src="@drawable/logo"
         android:contentDescription="@string/app_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:hint="@string/email_hint"
+        android:hint="@string/email"
         app:boxStrokeColor="@color/primary_green"
         app:hintTextColor="@color/primary_green"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +62,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/password_hint"
+        android:hint="@string/password"
         app:boxStrokeColor="@color/primary_green"
         app:hintTextColor="@color/primary_green"
         app:passwordToggleEnabled="true"
@@ -79,12 +79,55 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <!-- Remember Me & Forgot Password Row -->
+    <LinearLayout
+        android:id="@+id/rememberForgotLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout">
+
+        <!-- Remember Me Checkbox -->
+        <CheckBox
+            android:id="@+id/rememberMeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:buttonTint="@color/primary_green" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Forgot Password Text -->
+        <TextView
+            android:id="@+id/forgotPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textColor="@color/primary_green"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
     <!-- Login Button -->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button_primary"
         android:text="@string/login_button"
         android:textColor="@color/white"
@@ -93,7 +136,7 @@
         android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/rememberForgotLayout" />
 
     <!-- Signup Text -->
     <TextView

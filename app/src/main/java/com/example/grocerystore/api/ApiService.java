@@ -1,10 +1,13 @@
 package com.example.grocerystore.api;
 
-import com.example.grocerystore.model.CategoryResponse;
+import com.example.grocerystore.model.ApiProduct;
+import java.util.List;
+import retrofit2.Call;
+import retrofit2.http.GET;
 
-// Simplified API service for Phase 1 demo
-// Will be updated with Retrofit in Phase 2
+// REST API service interface for fetching product categories
 public interface ApiService {
-    // Placeholder for future API methods
-    CategoryResponse getCategories();
+    
+    @GET("v1/cede0a18-239c-4370-a84f-93fd197c5111")
+    Call<List<ApiProduct>> getProducts();
 }

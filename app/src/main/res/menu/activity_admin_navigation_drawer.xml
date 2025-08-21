@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin_dashboard"
+            android:icon="@drawable/ic_dashboard_24"
+            android:title="@string/nav_admin_dashboard" />
+        <item
+            android:id="@+id/nav_manage_users"
+            android:icon="@drawable/ic_people_24"
+            android:title="@string/nav_manage_users" />
+        <item
+            android:id="@+id/nav_manage_products"
+            android:icon="@drawable/ic_shopping_cart_24"
+            android:title="@string/nav_manage_products" />
+        <item
+            android:id="@+id/nav_manage_orders"
+            android:icon="@drawable/ic_shopping_bag_24"
+            android:title="@string/nav_manage_orders" />
+        <item
+            android:id="@+id/nav_add_admin"
+            android:icon="@drawable/ic_person_add_24"
+            android:title="@string/nav_add_admin" />
+        <item
+            android:id="@+id/nav_add_special_offer"
+            android:icon="@drawable/ic_offer_24"
+            android:title="Add Special Offer" />
+    </group>
+
+    <item android:title="@string/nav_admin_tools">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_contact_support_24"
+                android:title="@string/nav_contact_us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout_24"
+                android:title="@string/nav_logout" />
+        </menu>
+    </item>
+
+</menu>

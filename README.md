@@ -5,22 +5,26 @@ A modern Android grocery delivery application built with Java and Material Desig
 ## 📱 Phase 1 Features (Current)
 
 ✅ **Animated Splash Screen**
+
 - Beautiful grocery cart logo with fruits/vegetables
 - Smooth fade-in, slide-up, and scale animations
 - 3-second display with automatic navigation
 
 ✅ **Introduction Screen**
+
 - Welcome message and app description
 - Custom grocery illustration
 - "Connect" button with API simulation
 - Loading indicator and error handling
 
 ✅ **Login Flow**
+
 - Material Design text inputs
 - Email and password validation
 - Navigation to main app
 
 ✅ **UI/UX Design**
+
 - Custom green color scheme for grocery theme
 - Material Design 3 components
 - Responsive layouts with ConstraintLayout
@@ -54,12 +58,15 @@ A modern Android grocery delivery application built with Java and Material Desig
 ## 🔧 Setup & Installation
 
 ### Prerequisites
+
 - Android Studio Arctic Fox or later
 - JDK 11 or later
 - Android SDK API 26+
 
 ### Steps
+
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/grocery-store-android.git
    ```
@@ -73,22 +80,25 @@ A modern Android grocery delivery application built with Java and Material Desig
    - Or press `Shift + F10`
 
 ### Running on Device/Emulator
+
 - **Emulator**: Create AVD with API 34+ (recommended)
 - **Physical Device**: Enable USB debugging in Developer Options
 
 ## 📸 Screenshots
 
-*Screenshots will be added once the app is running*
+_Screenshots will be added once the app is running_
 
 ## 🗺️ Roadmap
 
 ### Phase 2 (Planned)
+
 - [ ] Real REST API integration
 - [ ] Product catalog with categories
 - [ ] Search functionality
 - [ ] User authentication
 
 ### Phase 3 (Planned)
+
 - [ ] Shopping cart functionality
 - [ ] Order management
 - [ ] Payment integration
@@ -108,7 +118,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Qarma** - *Initial work*
+**Qarma** - _Initial work_
 
 ## 🙏 Acknowledgments
 

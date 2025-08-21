@@ -29,6 +29,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    
+    lint {
+        disable += "SuspiciousImport"
+    }
 }
 
 dependencies {
@@ -38,6 +42,12 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     
+    // Fragment support
+    implementation("androidx.fragment:fragment:1.6.1")
+    
+    // SharedPreferences (comes with AppCompat)
+    implementation("androidx.preference:preference:1.2.1")
+    
     // Network dependencies
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
@@ -45,6 +55,10 @@ dependencies {
     
     // Animation dependencies
     implementation("com.airbnb.android:lottie:6.1.0")
+    
+    // Image loading
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
     
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

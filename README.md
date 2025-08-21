@@ -42,6 +42,60 @@ A modern Android application for grocery store management, supporting both regul
 
 ---
 
+## 🎥 **Video Demo**
+
+### 📱 **App Demonstration**
+Watch the complete app walkthrough showing all features:
+
+[![Grocery Store App Demo](https://img.shields.io/badge/Watch%20Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/watch?v=YOUR_VIDEO_ID)
+
+**🎬 Demo Includes:**
+- **Splash Screen Animation** - App startup with custom logo
+- **REST API Connection** - Connect button functionality
+- **User Authentication** - Login and registration process
+- **Product Browsing** - Category-wise product display
+- **Favorites System** - Adding/removing favorite products
+- **Admin Panel** - Product and offer management
+- **Special Offers** - Creating and managing offers
+- **Database Operations** - Real-time data handling
+
+### 📹 **Quick Preview**
+> **Note:** Replace the YouTube link above with your actual video URL after uploading
+
+**Alternative Video Hosting Options:**
+- Upload to **YouTube** (Recommended)
+- Upload to **Vimeo**
+- Host on **Google Drive** (public link)
+- Upload to **GitHub Releases** (for smaller videos)
+
+### 📸 **Screenshots**
+<table>
+  <tr>
+    <td align="center"><b>Splash Screen</b></td>
+    <td align="center"><b>Introduction</b></td>
+    <td align="center"><b>Login</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/splash.png" width="200"/></td>
+    <td><img src="screenshots/intro.png" width="200"/></td>
+    <td><img src="screenshots/login.png" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Products</b></td>
+    <td align="center"><b>Admin Panel</b></td>
+    <td align="center"><b>Offers</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/products.png" width="200"/></td>
+    <td><img src="screenshots/admin.png" width="200"/></td>
+    <td><img src="screenshots/offers.png" width="200"/></td>
+  </tr>
+</table>
+
+> **Note:** Add screenshots to `screenshots/` folder in your repository
+
+---
+
 ## 🗂️ **App Flow**
 
 1. **SplashActivity** → Animated splash screen

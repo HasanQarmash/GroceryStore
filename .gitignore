@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.iml
 .gradle
 /local.properties
@@ -7,9 +8,19 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+=======
+# .gitignore for Android/Java
+*.iml
+.gradle
+/local.properties
+/.idea
+>>>>>>> 5ab67fe14226cd0ee791bbd1dc9a2acdc386f5be
 .DS_Store
 /build
 /captures
 .externalNativeBuild
+<<<<<<< HEAD
 .cxx
 local.properties
+=======
+>>>>>>> 5ab67fe14226cd0ee791bbd1dc9a2acdc386f5be

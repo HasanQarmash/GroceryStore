@@ -103,9 +103,9 @@ For larger videos (25MB+):
     <td align="center"><b>Login</b></td>
   </tr>
   <tr>
-    <td><img src="screenshots/splash.png" width="200"/></td>
-    <td><img src="screenshots/intro.png" width="200"/></td>
-    <td><img src="screenshots/login.png" width="200"/></td>
+    <td><img src="screenshots/dashUser.jpg" width="200"/></td>
+    <td><img src="screenshots/orderUser.jpg" width="200"/></td>
+    <td><img src="screenshots/userOffers.jpg" width="200"/></td>
   </tr>
   <tr>
     <td align="center"><b>Products</b></td>

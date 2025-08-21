@@ -98,9 +98,9 @@ For larger videos (25MB+):
 ### 📸 **Screenshots**
 <table>
   <tr>
-    <td align="center"><b>Splash Screen</b></td>
-    <td align="center"><b>Introduction</b></td>
-    <td align="center"><b>Login</b></td>
+    <td align="center"><b>Dashbord User Screen</b></td>
+    <td align="center"><b>My order </b></td>
+    <td align="center"><b>offers</b></td>
   </tr>
   <tr>
     <td><img src="screenshots/dashUser.jpg" width="200"/></td>

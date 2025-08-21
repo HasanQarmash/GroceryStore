@@ -47,7 +47,9 @@ A modern Android application for grocery store management, supporting both regul
 ### 📱 **App Demonstration**
 Watch the complete app walkthrough showing all features:
 
-[![Grocery Store App Demo](https://img.shields.io/badge/Watch%20Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/watch?v=YOUR_VIDEO_ID)
+**🎬 Video Demo:** [Download and Watch Demo Video](https://github.com/HasanQarmash/GroceryStore/releases/download/v1.0/demo.mp4)
+
+> **Note:** Video is hosted in GitHub Releases due to file size (32MB). Click link to download and watch.
 
 **🎬 Demo Includes:**
 - **Splash Screen Animation** - App startup with custom logo
@@ -59,14 +61,32 @@ Watch the complete app walkthrough showing all features:
 - **Special Offers** - Creating and managing offers
 - **Database Operations** - Real-time data handling
 
-### 📹 **Quick Preview**
-> **Note:** Replace the YouTube link above with your actual video URL after uploading
+### 📹 **How to Add Your Video:**
+1. **Record your app demo** (MP4 format, under 25MB)
+2. **Add video file** to repository root as `demo.mp4`
+3. **GitHub will automatically display** the video in README
 
-**Alternative Video Hosting Options:**
-- Upload to **YouTube** (Recommended)
-- Upload to **Vimeo**
-- Host on **Google Drive** (public link)
-- Upload to **GitHub Releases** (for smaller videos)
+**Alternative: Using GitHub Releases**
+For larger videos (25MB+):
+1. Go to **Releases** in your GitHub repo
+2. **Create new release** and attach video file
+3. **Copy the download URL** and embed in README
+
+### 📹 **Quick Preview**
+> **Note:** Add your demo video as `demo.mp4` in the repository root folder
+
+**📋 Video Requirements:**
+- **Format:** MP4, MOV, or WEBM
+- **Size:** Under 25MB (GitHub limit)
+- **Duration:** 2-5 minutes recommended
+- **Resolution:** 720p or 1080p
+
+**🎬 Recording Tips:**
+- Show app startup and splash screen
+- Demonstrate user login/registration
+- Browse products and add to favorites
+- Show admin panel features
+- Include REST API connection demo
 
 ### 📸 **Screenshots**
 <table>

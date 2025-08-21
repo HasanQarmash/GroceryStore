@@ -28,25 +28,30 @@
 
 ## 🎥 **Video Demo Instructions**
 
+### **Option 1: Direct GitHub Upload (Recommended)**
 1. **Record Your App:**
-   - Use screen recording software
-   - Show all major features
-   - Keep video under 5 minutes
+   - Use screen recording software (OBS, QuickTime, etc.)
+   - Record in MP4 format
+   - Keep under 25MB file size
+   - Show all major features (2-5 minutes)
 
-2. **Upload Options:**
-   - **YouTube** (Best option)
-   - **Vimeo**
-   - **Google Drive** (public link)
+2. **Add to Repository:**
+   - Save video as `demo.mp4` in repository root
+   - GitHub will automatically display it in README
+   - No external hosting needed!
 
-3. **Update README:**
-   Replace `YOUR_VIDEO_ID` in README.md with your actual video ID
+3. **File Requirements:**
+   - **Format:** MP4, MOV, WEBM
+   - **Size:** Under 25MB
+   - **Resolution:** 720p or 1080p
 
-**YouTube URL Format:**
+### **Option 2: GitHub Releases (For Large Files)**
+1. **Go to Releases** in your GitHub repository
+2. **Create New Release**
+3. **Attach video file** to release
+4. **Copy download URL** and embed in README
+
+**GitHub Video URL Format:**
 ```
-https://youtube.com/watch?v=YOUR_VIDEO_ID
-```
-
-**Example:**
-```
-https://youtube.com/watch?v=dQw4w9WgXcQ
+https://github.com/HasanQarmash/GroceryStore/assets/demo.mp4
 ```

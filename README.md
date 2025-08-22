@@ -119,7 +119,7 @@ For larger videos (25MB+):
   </tr>
 </table>
 
-> **Note:** Add screenshots to `screenshots/` folder in your repository
+
 
 ---
 
